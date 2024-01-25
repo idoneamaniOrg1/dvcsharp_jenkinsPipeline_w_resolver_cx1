@@ -72,7 +72,7 @@ void staticScan(Map args)
      
 
     dir('sub') {
-        checkmarxASTScanner additionalOptions: "--debug --async --project-tags ${projectTags} --scan-types sast,sca --scan-timeout ${scanTimeout} --sca-resolver ${scaResolverPath} --sca-resolver-params \"--log-level Debug --nuget-parameters -IgnoreDependencies\"",
+        checkmarxASTScanner additionalOptions: "--debug --async --project-tags ${projectTags} --scan-types sast,sca --scan-timeout ${scanTimeout} --sca-resolver ${scaResolverPath} --sca-resolver-params \"--log-level Debug\"",
         checkmarxInstallation: 'checkmarx_ast',
         baseAuthUrl: 'https://eu.iam.checkmarx.net',
         serverUrl: 'https://eu.ast.checkmarx.net',
